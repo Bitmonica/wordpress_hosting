@@ -1,0 +1,427 @@
+@charset "UTF-8";
+
+/*
+Theme Name: AvistaTech
+Author: AvistaTech
+Author URI: https://wordpress.org/
+Description: Avista Tech is an experienced, dynamic and innovative with a team of consultants who are highly specialized in the technology consulting as well as recruitment industries.
+Requires at least: 2.1
+Tested up to: 5.9
+Requires PHP: 5.6
+Version: 1.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Avista Tech
+*/
+
+/**
+ * SETTINGS
+ * File-header..........The file header for the themes style.css file.
+ * Fonts................Any font files, if the project needs specific fonts.
+ * Global...............Project-specific, globally available variables.
+ *
+ * TOOLS
+ * Functions............Global functions.
+ * Mixins...............Global mixins.
+ *
+ * GENERIC
+ * Normalize.css........Normalise browser defaults.
+ * Breakpoints..........Mixins and variables for responsive styles
+ * Vertical-margins.....Vertical spacing for the main components.
+ * Reset................Reset specific elements to make them easier to style in other contexts.
+ * Clearings............Clearings for the main components.
+ *
+ * ELEMENTS
+ * Blockquote...........Default blockquote.
+ * Forms................Element-level form styling.
+ * Headings.............H1–H6
+ * Links................Default links.
+ * Lists................Default lists.
+ * Media................Images, Figure, Figcaption, Embed, iFrame, Objects, Video.
+ *
+ * BLOCKS
+ * Audio................Specific styles for the audio block.
+ * Button...............Specific styles for the button block.
+ * Code.................Specific styles for the code block.
+ * Columns..............Specific styles for the columns block.
+ * Cover................Specific styles for the cover block.
+ * File.................Specific styles for the file block.
+ * Gallery..............Specific styles for the gallery block.
+ * Group................Specific styles for the group block.
+ * Heading..............Specific styles for the heading block.
+ * Image................Specific styles for the image block.
+ * Latest comments......Specific styles for the latest comments block.
+ * Latest posts.........Specific styles for the latest posts block.
+ * Legacy...............Specific styles for the legacy gallery.
+ * List.................Specific styles for the list block.
+ * Media text...........Specific styles for the media and text block.
+ * Navigation...........Specific styles for the navigation block.
+ * Paragraph............Specific styles for the paragraph block.
+ * Pullquote............Specific styles for the pullquote block.
+ * Quote................Specific styles for the quote block.
+ * Search...............Specific styles for the search block.
+ * Separator............Specific styles for the separator block.
+ * Spacer...............Specific styles for the spacer block.
+ * Table................Specific styles for the table block.
+ * Verse................Specific styles for the verse block.
+ * Video................Specific styles for the video block.
+ * Utilities............Block alignments.
+ *
+ * COMPONENTS
+ * Header...............Header styles.
+ * Footer...............Footer styles.
+ * Comments.............Comment styles.
+ * Archives.............Archive styles.
+ * 404..................404 styles.
+ * Search...............Search styles.
+ * Navigation...........Navigation styles.
+ * Footer Navigation....Footer Navigation styles.
+ * Pagination...........Pagination styles.
+ * Single...............Single page and post styles.
+ * Posts and pages......Misc, sticky post styles.
+ * Entry................Entry, author biography.
+ * Widget...............Widget styles.
+ * Editor...............Editor styles.
+ *
+ * UTILITIES
+ * A11y.................Screen reader text, prefers reduced motion etc.
+ * Color Palette........Classes for the color palette colors.
+ * Editor Font Sizes....Editor Font Sizes.
+ * Measure..............The width of a line of text, in characters.
+ */
+
+/* Categories 01 to 03 are the basics. */
+
+/* Variables */
+
+.customimage img{
+	border-radius: 5px;
+}
+
+
+.wpcf7-not-valid-tip {
+    text-align: left;
+    position: relative;
+    bottom: 16px;
+}
+
+/**/
+.radio-button input[type="radio"] {
+        display: none;
+      }      
+      .radio-button label {
+        display: inline-block;
+        background-color: #EEF4F8;
+text-align: center;
+min-height: 180px;
+border-radius: 5px;
+transition: all 0.8s ease-in-out 0s;
+-webkit-transition: all 0.8s ease-in-out 0s;
+-moz-transition: all 0.8s ease-in-out 0s;
+-o-transition: all 0.8s ease-in-out 0s;
+-ms-transition: all 0.8s ease-in-out 0s;
+position: relative;
+		  width: 100%;
+        cursor: pointer;
+      }      
+      .radio-button input[type="radio"]:checked+label {
+        background-color: #0E76BC;
+        color: #fff;
+      }
+
+
+.industry_section .radio-button label:hover{background: #0E76BC; color: #fff; transform: rotate(7deg);}
+.industry_section .radio-button label:hover a{color: #fff;}
+.industry_section .radio-button label:hover .active_hover{display: block; text-align: center; margin: 0 auto;}
+.industry_section .radio-button label .active_hover{display: none; max-width: 50px}
+.industry_section .radio-button label:hover .img_white{display: none}
+.industry_section .radio-button label span{font-family: 'Spartan-Medium'; font-size: 16px; margin-top: 5px; display: block}
+.industry_section h3{font-size: 35px; font-weight: bold; margin-bottom: 50px;}
+
+
+.zoombanner {
+  animation: scale 40s linear infinite;
+}
+  
+@keyframes scale {
+  50% {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+  }
+}
+
+.steptwo .radio-button label{min-height: 120px;}
+.steptwo .industry_section .radio-button label span{width: 150px;}
+
+.stepthree .radio-button label{min-height: 120px;}
+.bloglisting h3 a{ font-family: 'Montserrat'; color: #333;}
+.media p a{font-size: 20px;color: #333333;font-weight: 700;line-height: 25px;font-family: 'Montserrat';}
+.search-container{border: 1px solid #8BD0FF;}
+
+.career_Section .form-control{margin-bottom: 20px;}
+
+
+.career_Section .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+.career_Section .upload-btn-wrapper .btn {
+    background-color: transparent;
+    border: 1px solid #0E76BC;
+    border-radius: 5px;
+    width: auto;
+    height: auto;  
+    color: #0E76BC;
+  }
+  
+.career_Section .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+.career_Section .wpcf7-form-control-wrap{top: 25px;}
+.career_Section .industry{cursor: pointer;}
+
+
+/*banner slider css start*/
+
+.h-banner-slider-main{position: relative;}
+.h-banner-slider-main .progressBarContainer{position:absolute;bottom:25px;left:0;right:0;margin:0 auto;}
+.h-banner-slider-main .progressBarContainer div{display:inline-block;width:auto;padding:0;cursor:pointer;margin-right:5%;float:left;color:white;}
+.h-banner-slider-main .progressBarContainer div:last-child{margin-right:0;}
+.h-banner-slider-main .progressBarContainer div span.progressBar{width:100%;height:4px;background-color:rgba(255,255,255,0.4);display:block;}
+.h-banner-slider-main .progressBarContainer div span.progressBar .inProgress{background-color:#8dc63f;width:0%;height:4px;}
+.h-banner-slider-main .progressBarContainer-main{max-width:80%;display:flex;justify-content:space-between;}
+.h-banner-slider-main .item h3{font-size:24px;color:#fff;width:auto;padding:10px 0;font-family:'Montserrat';font-weight:600;}
+
+.h-banner-slider-main .banner-slide-col .banner-content{height:100vh;position:relative;}
+.h-banner-slider-main .banner-slide-col .banner-content img{width:100%;height:100%;object-fit:cover;object-position: right; -webkit-transform:scale(1);transform:scale(1);transition:-webkit-transform 6.5s;transition:transform 6.5s;transition:transform 6.5s,-webkit-transform 6.5s;transition-delay:1.5s;}
+.h-banner-slider-main .banner-slide-col.slick-active .banner-content img{-webkit-transform:scale(1.07);transform:scale(1.07);}
+.main_banner .carousel-caption{left:0px!important;right:0px!important;}
+
+
+@media (max-width: 1599px) {
+
+.h-banner-slider-main .item h3{font-size:20px;}
+.main_banner .carousel-caption h2 {font-size: 70px; }
+.main_banner .carousel-caption{top:50% !important;transform:translateY(-50%) !important; bottom: unset !important;}
+
+}
+
+@media (max-width: 1499px) {
+
+.h-banner-slider-main .item h3{font-size:18px;}
+.main_banner .carousel-caption h2{font-size:58px !important;}
+.main_banner .carousel-caption p{font-size:30px !important;}
+
+}
+
+@media (max-width: 1199px) {
+.h-banner-slider-main .banner-slide-col .banner-content{height:650px;}
+.industry_section .radio-button label span{font-size: 12px;}
+}
+
+@media (max-width: 991px) {
+
+.main_banner .carousel-caption h2{font-size:44px!important;}
+.main_banner .carousel-caption p{font-size:25px!important;}
+.h-banner-slider-main .item h3{font-size:16px;}
+.h-banner-slider-main .banner-slide-col .banner-content {height: 500px; }
+
+}
+
+
+@media (max-width:979px){
+
+    .main_banner .carousel-caption{transform:none!important;}
+
+}
+
+@media (max-width:767px) {
+
+.main_banner .carousel-caption{padding-top:50px;}
+.main_banner .carousel-caption h2{font-size:30px!important;margin-bottom:15px !important;}
+.main_banner .carousel-caption p{font-size:20px!important;}
+.h-banner-slider-main .banner-slide-col .banner-content{height:380px;}
+.h-banner-slider-main .item h3{font-size:14px;}
+/*carrear*/
+.custominputcaptchatext {text-align: left;margin-bottom: 16px;margin-top: -35px;}
+.custominputcaptcha {text-align: left;margin-bottom: 70px;}
+
+}
+
+@media (max-width:481px) {
+.h-banner-slider-main .progressBarContainer-main{max-width:100%;padding:0px 20px;bottom:9px;}
+.h-banner-slider-main .item h3{font-size:12px;padding:7px 0px;text-align:center;}
+.h-banner-slider-main .banner-slide-col .banner-content{height:420px;}
+.h-banner-slider-main .progressBarContainer div span.progressBar,.h-banner-slider-main .progressBarContainer div span.progressBar .inProgress{height:3px;}
+}
+
+.career_Section .upload-btn-wrapper{padding-top: 25px;}
+.career_Section .text-left{text-align: left;}
+
+.wpcf7-submit.btn.get_touch {margin-top: 15px;}
+
+.see_all a{color: #fff !important;}
+a.get_touch :active{color: #fff;}
+.homectasec .btn:focus{color: #fff;}
+
+/**/
+.blog_section ul li, .blog_section ol li
+{
+  font-size: 18px;
+  color: #484848;
+  margin-bottom: 5px;
+  font-weight: 300;
+  font-family: 'Spartan-Regular';
+  line-height: 35px;
+}
+
+/*Career Page*/
+.career_Section .radio-button label:hover{background: transparent; color: #fff;}
+/*.career_Section .radio-button label:hover{background: transparent; color: #fff; transform: rotate(7deg);}*/
+.career_Section .radio-button label:after{content:'';position:absolute;top:0;bottom:0;left:0;right:0;z-index:-1;border-radius:5px;transition:all 350ms ease-in-out;-webkit-transition:all 350ms ease-in-out;-moz-transition:all 350ms ease-in-out;-o-transition:all 350ms ease-in-out;-ms-transition:all 350ms ease-in-out;}
+/*.career_Section .radio-button label:after{content:'';position:absolute;background-color:#EEF4F8;top:0;bottom:0;left:0;right:0;z-index:-1;border-radius:5px;transition:all 350ms ease-in-out;-webkit-transition:all 350ms ease-in-out;-moz-transition:all 350ms ease-in-out;-o-transition:all 350ms ease-in-out;-ms-transition:all 350ms ease-in-out;}*/
+.career_Section .radio-button label:hover:after{background:#0E76BC;color:#fff;transform:rotate(5deg);}
+.career_Section .radio-button label:hover a{color: #fff;}
+.career_Section .radio-button label:hover .active_hover{display: block}
+.career_Section .radio-button label .active_hover{display: none; max-width: 50px}
+.career_Section .radio-button label:hover .img_white{display: none}
+.career_Section .radio-button label span{font-family: 'Spartan-Medium'; font-size: 16px; margin-top: 5px; display: block}
+.career_Section h3{font-size: 35px; font-weight: bold; margin-bottom: 50px;}
+
+.blog_section ul li::before {
+    height: 18px;
+    content: "\f111";
+    margin: 10px 0 0 -22px;
+    position: absolute;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-weight: 900;
+    color: #8BB155;
+    vertical-align: middle;
+    border-radius: 100%;
+    margin-right: 30px;
+}
+
+.bloglisting .insight_card h3{font-size: 25px;line-height: 35px;}
+/*.aboutstrong{font-weight: 800 !important;}*/
+
+.responsive-map{
+overflow: hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.responsive-map iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+.btn.r_block{display: none;margin-right: 10px;}
+/*.insight_card .card-body:hover h3{color: #0E76BC}*/
+
+.socila_link ul.inline-list {list-style: none;
+    margin-top: 0;
+    margin-bottom: 1.0625rem;
+    margin-left: -1.375rem;
+    margin-right: 0;
+    overflow: hidden;
+    padding: 0;}
+
+.socila_link .inline-list li {display: block;
+    float: left;
+    list-style: none;
+    margin-left: 1.375rem;}
+
+.socila_link ul.inline-list li::before {display: none;}
+.socila_link a:hover {color: #fff;}
+
+/**/
+.career_Section .radio-button input[type="radio"] {
+        display: none;
+      }      
+.career_Section .radio-button label {
+    display: inline-block;
+    background-color: #EEF4F8;
+    text-align: center;
+    min-height: 120px;
+    border-radius: 5px;
+    transition: all 100ms ease-in-out;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    position: relative;
+    width: 100%;
+    z-index: 50;
+    cursor: pointer;
+    color: #4d4d4d;
+  }      
+.career_Section .radio-button input[type="radio"]:checked+label {
+        background-color: #0E76BC;
+        color: #fff;
+      }
+.career_Section .radio-button input[type="radio"]:checked+label:after {
+    background-color: transparent;
+    transform: rotate(0deg);
+}
+.textleft{text-align: left;}
+
+.wpcf7-captchar
+{
+  background: #ffffff;
+    border: 1px solid #8BD0FF;
+    height: 45px;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 16px;
+    width: 200px;
+    color: #0e0e0e;
+    padding-left: 20px;
+}
+
+.career_Section .wpcf7-captcha-captcha-118
+{
+  position: absolute;
+  margin-top: 35px;
+}      
+
+.row.captchadiv {
+    margin-top: 20px;
+}
+.Contact_section .common-form input {
+    margin-bottom: 30px !important;
+}
+
+.col-lg-6.paddingziro {padding: 0px;}
+.centerbtn {margin-top: 10px !important;}
+
+.pagination a:last-child{border: none;}
+.pagination a:first-child{border: none;}
+.bloglisting .card-title a:hover {color: #0E76BC;}
+
+.blogform {margin-top: 70px;}
+.insightsform {margin-bottom: 25px;}
+.insightstext{margin-bottom: 15px;}
+.blogform .wpcf7-not-valid-tip {position: relative;top: 5px;}
+
+/**/
+.blogimagelistingmain:hover a{color: #0E76BC;}
+.blogimagelistingmain:hover i {margin-left: 25px;}
+.blogimagelistingmain:hover img {transform: scale(1.1,1.1);}
+
+.owl-carousel .bloglisting:hover a{color: #0E76BC;}
+.owl-carousel .bloglisting:hover i {margin-left: 25px;}
+.owl-carousel .bloglisting:hover img {transform: scale(1.1,1.1);}

@@ -1,0 +1,12 @@
+[28-Nov-2022 17:15:11 America/Boise] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home2/xuwoikmy/public_html/avistatech/wp-includes/widgets/class-wp-widget-tag-cloud.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/xuwoikmy/public_html/avistatech/wp-includes/widgets/class-wp-widget-tag-cloud.php on line 17
+[30-Nov-2022 06:02:50 America/Boise] PHP Fatal error:  Uncaught Error: Class "WP_Widget" not found in /home2/xuwoikmy/public_html/avistatech/wp-includes/widgets/class-wp-widget-tag-cloud.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/xuwoikmy/public_html/avistatech/wp-includes/widgets/class-wp-widget-tag-cloud.php on line 17
+[25-Jan-2023 14:04:52 America/Boise] PHP Fatal error:  Uncaught Error: Class 'WP_Widget' not found in /home2/xuwoikmy/public_html/avistatech/wp-includes/widgets/class-wp-widget-tag-cloud.php:17
+Stack trace:
+#0 {main}
+  thrown in /home2/xuwoikmy/public_html/avistatech/wp-includes/widgets/class-wp-widget-tag-cloud.php on line 17
